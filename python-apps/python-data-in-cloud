@@ -2,6 +2,7 @@ virtualenv -p python3 vrenv
 source vrenv/bin/activate
 run web app
 git clone https://github.com/GoogleCloudPlatform/training-data-analyst
+export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python3.5/dist-packages/
 cd ~/training-data-analyst/courses/developingapps/python/datastore/start
 export GCLOUD_PROJECT=$DEVSHELL_PROJECT_ID
 pip install -r requirements.txt
